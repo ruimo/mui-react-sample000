@@ -10,6 +10,7 @@
     "@mui/x-data-grid": "^5.6.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "cross-env": "^7.0.3",
     "node-sass": "^7.0.1",
     "react": "latest",
     "react-dom": "latest",
@@ -19,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=/mui-react-sample000/ react-scripts build",
     "test": "react-scripts test",
     "deploy": "npm run build && gh-pages -d build",
     "eject": "react-scripts eject"
