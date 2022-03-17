@@ -1,6 +1,7 @@
 {
   "name": "create-react-app-with-typescript",
   "version": "0.0.1",
+  "homepage": "https://ruimo.github.io/mui-react-sample000",
   "private": true,
   "dependencies": {
     "@emotion/react": "latest",
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
