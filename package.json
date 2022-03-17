@@ -1,7 +1,7 @@
 {
   "name": "create-react-app-with-typescript",
   "version": "0.0.1",
-  "homepage": ".",
+  "homepage": "/mui-react-sample000",
   "private": true,
   "dependencies": {
     "@emotion/react": "latest",
