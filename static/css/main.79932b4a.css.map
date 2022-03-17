@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.79932b4a.css","mappings":"AAAA,YACI,SAAU,CCDd,KACI,iBAAkB","sources":["RecordMaintenance.scss","App.scss"],"sourcesContent":[".searchText {\n    width: 70%;\n}\n\n",".App {\n    text-align: center;\n}\n"],"names":[],"sourceRoot":""}
