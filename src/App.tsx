@@ -43,7 +43,7 @@ const userSearchApi: (searchText: string) => any[] = (searchText: string) => {
     }
 };
 
-const url = (s) => process.env.PUBLIC_URL + s;
+const url = (s: string) => process.env.PUBLIC_URL + s;
 
 export default function App() {
     function HomeIcon(props: any) {
