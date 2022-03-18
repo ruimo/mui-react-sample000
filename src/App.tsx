@@ -97,7 +97,7 @@ export default function App() {
           <Box component="main" sx={{ flexGrow: 1 }}>
             <Toolbar/>
             <Routes>
-              <Route path={url("/user")} element={<RecordMaintenance columns={userColumns} dataSource={userSearchApi}/>}/>
+              <Route path="/mui-react-sample000/user" element={<RecordMaintenance columns={userColumns} dataSource={userSearchApi}/>}/>
             </Routes>
           </Box>
         </Box>
