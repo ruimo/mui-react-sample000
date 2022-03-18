@@ -80,13 +80,13 @@ export default function App() {
             <Toolbar><HomeIcon/></Toolbar>
             <Divider/>
             <List>
-              <Link href="/user" underline="none">
-                <ListItem button key='User' selected={location.pathname === '/user'}>
+              <Link href={process.env.PUBLIC_URL + "/user"} underline="none">
+                <ListItem button key='User' selected={location.pathname === process.env.PUBLIC_URL + '/user'}>
                   <ListItemText primary='User'/>
                 </ListItem>
               </Link>
-              <Link href="/department" underline="none">
-                <ListItem button key='Department' selected={location.pathname === '/department'}>
+              <Link href={process.env.PUBLIC_URL + "/department"} underline="none">
+                <ListItem button key='Department' selected={location.pathname === process.env.PUBLIC_URL + '/department'}>
                   <ListItemText primary='Department'/>
                 </ListItem>
               </Link>
