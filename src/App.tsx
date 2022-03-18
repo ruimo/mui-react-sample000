@@ -43,6 +43,8 @@ const userSearchApi: (searchText: string) => any[] = (searchText: string) => {
     }
 };
 
+const url = (s) => process.env.PUBLIC_URL + s;
+
 export default function App() {
     function HomeIcon(props: any) {
         return (
@@ -80,13 +82,13 @@ export default function App() {
             <Toolbar><HomeIcon/></Toolbar>
             <Divider/>
             <List>
-              <Link href={process.env.PUBLIC_URL + "/user"} underline="none">
-                <ListItem button key='User' selected={location.pathname === process.env.PUBLIC_URL + '/user'}>
+              <Link href={url("/user")} underline="none">
+                <ListItem button key='User' selected={location.pathname === url('/user')}>
                   <ListItemText primary='User'/>
                 </ListItem>
               </Link>
               <Link href={process.env.PUBLIC_URL + "/department"} underline="none">
-                <ListItem button key='Department' selected={location.pathname === process.env.PUBLIC_URL + '/department'}>
+                <ListItem button key='Department' selected={location.pathname === url('/department')}>
                   <ListItemText primary='Department'/>
                 </ListItem>
               </Link>
@@ -95,7 +97,7 @@ export default function App() {
           <Box component="main" sx={{ flexGrow: 1 }}>
             <Toolbar/>
             <Routes>
-              <Route path="/user" element={<RecordMaintenance columns={userColumns} dataSource={userSearchApi}/>}/>
+              <Route path={url("/user")} element={<RecordMaintenance columns={userColumns} dataSource={userSearchApi}/>}/>
             </Routes>
           </Box>
         </Box>
